@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bank Management System</h1>
+        <p>Java Mini Project</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Bank Account Details</h2>
+
+        <label>Enter Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Enter Initial Balance:</label>
+        <input type="number" id="balance" placeholder="Enter initial balance">
+
+        <label>Enter Deposit Amount:</label>
+        <input type="number" id="deposit" placeholder="Enter deposit amount">
+
+        <label>Enter Withdrawal Amount:</label>
+        <input type="number" id="withdraw" placeholder="Enter withdrawal amount">
+
+        <button onclick="processBank()">Submit</button>
+
+        <div id="result" style="display:none;">
+
+            <h2>Bank Account Summary</h2>
+
+            <p id="depositMessage"></p>
+            <p id="withdrawMessage"></p>
+
+            <div class="details">
+                <h3>Account Details</h3>
+                <p id="customerName"></p>
+                <p id="finalBalance"></p>
+            </div>
+
+        </div>
+
+        <p id="error"></p>
+
+    </div>
+
+    <footer>
+        <p>Bank Management System | Developed using Java OOP Concepts</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
